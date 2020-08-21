@@ -6,7 +6,6 @@ playerTurn = 'black'
 gameOver = False
 import copy
 import time
-from smd2202_ai import *
 
 '''
 t = turtle.Turtle()
@@ -671,7 +670,7 @@ def enemyMove(board, player):
 	#print(playerFormat)
 	#move = maximin(boardCopy,0,3,True,playerFormat)
 	#move = minimaxN(boardCopy, 0, 4, float('-inf'), float('inf'),playerFormat,2)
-	move = select_move_alphabeta(boardCopy, playerFormat)
+	#move = select_move_alphabeta(boardCopy, playerFormat)
 	print('enemy move is' + str(move))
 	return [move[0], move[1]]
 
@@ -792,8 +791,8 @@ updateScore()
 
 
 initialize()
-#s.onclick(clickFunction)
-playMoveWithOtherAI(True)
+s.onclick(clickFunction)
+#playMoveWithOtherAI(True)
 s.mainloop()
 
 

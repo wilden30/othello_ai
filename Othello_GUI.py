@@ -6,10 +6,6 @@ playerTurn = 'black'
 gameOver = False
 import copy
 import time
-#from herny_gui import *
-#from fuckinthing import *
-#from nate_Othello import *
-#from Nate_Othello2 import *
 from smd2202_ai import *
 
 '''
